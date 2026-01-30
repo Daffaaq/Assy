@@ -1,0 +1,129 @@
+﻿<Window x:Class="Assy.UpdateTargetDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Update Target" 
+        Height="400" 
+        Width="500"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        Background="#F0F2F5">
+
+    <Window.Resources>
+        <!-- Style untuk TextBox dengan corner radius - FIXED VERSION -->
+        <Style x:Key="RoundedTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#2C3E50"/>
+            <Setter Property="BorderBrush" Value="#BDC3C7"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="CaretBrush" Value="#2C3E50"/>
+            <Setter Property="SelectionBrush" Value="#3498DB"/>
+            <Setter Property="SelectionOpacity" Value="0.3"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border x:Name="border" 
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost" 
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="#3498DB"/>
+                                <Setter TargetName="border" Property="BorderThickness" Value="3"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style untuk Button -->
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" 
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Opacity" Value="0.8"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Opacity" Value="0.6"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0" Text="UPDATE TARGET PER SHIFT" 
+                   FontSize="18" FontWeight="Bold" 
+                   Foreground="#2C3E50" HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <!-- Current Target -->
+        <Border Grid.Row="1" Background="White" CornerRadius="5" Padding="10">
+            <StackPanel>
+                <TextBlock Text="TARGET SAAT INI" FontSize="12" 
+                           Foreground="#7F8C8D"/>
+                <TextBlock x:Name="txtCurrentTarget" Text="100" 
+                           FontSize="24" FontWeight="Bold" 
+                           Foreground="#3498DB"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Input New Target -->
+        <StackPanel Grid.Row="2" Margin="0,20,0,0">
+            <TextBlock Text="TARGET BARU" FontSize="12" 
+                       Foreground="#7F8C8D" Margin="0,0,0,5"/>
+            <TextBox x:Name="txtNewTarget" Height="50" 
+                     Style="{StaticResource RoundedTextBoxStyle}"
+                     Text="100" TextAlignment="Center"/>
+        </StackPanel>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" 
+                    HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button x:Name="btnCancel" Content="BATAL" 
+                    Background="#6C757D" Foreground="White"
+                    Click="btnCancel_Click"/>
+            <Button x:Name="btnUpdate" Content="UPDATE" 
+                    Background="#3498DB" Foreground="White"
+                    Click="btnUpdate_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
