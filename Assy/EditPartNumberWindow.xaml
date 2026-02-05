@@ -1,0 +1,193 @@
+﻿<Window x:Class="Assy.EditPartNumberWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Part Number" 
+        Height="280" 
+        Width="450"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <Window.Resources>
+        <!-- Modern Button Style -->
+        <Style x:Key="ModernButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="Margin" Value="8,0,8,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" 
+                                CornerRadius="4"
+                                Background="{TemplateBinding Background}"
+                                BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Opacity" Value="0.9"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Opacity" Value="0.8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Modern ComboBox Style -->
+        <Style x:Key="ModernComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="20,10,20,10"/>
+            <Setter Property="Padding" Value="10,0,0,0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#333333"/>
+        </Style>
+    </Window.Resources>
+
+    <!-- Main Container -->
+    <Grid>
+        <!-- Shadow Background -->
+        <Border Background="#33000000" 
+                CornerRadius="8"
+                Margin="15">
+            <Border.Effect>
+                <BlurEffect Radius="10"/>
+            </Border.Effect>
+        </Border>
+
+        <!-- Main Content Container -->
+        <Border CornerRadius="8" 
+                Background="White"
+                BorderBrush="#007ACC"
+                BorderThickness="1"
+                Margin="10">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" 
+                                  BlurRadius="20" 
+                                  Color="#33000000"/>
+            </Border.Effect>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Header -->
+                <Border Grid.Row="0"
+                        Background="#007ACC" 
+                        CornerRadius="8,8,0,0"
+                        Height="50">
+                    <Grid>
+                        <TextBlock Text="✏️ EDIT PART NUMBER" 
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   Foreground="White"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"/>
+
+                        <!-- Close Button -->
+                        <Button x:Name="btnClose" 
+                                Content="✕"
+                                Width="30"
+                                Height="30"
+                                FontSize="12"
+                                Background="Transparent"
+                                Foreground="White"
+                                BorderThickness="0"
+                                HorizontalAlignment="Right"
+                                Margin="0,0,10,0"
+                                Click="btnCancel_Click"
+                                Cursor="Hand">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="Transparent"
+                                            CornerRadius="15">
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                        VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Border>
+
+                <!-- Content Area -->
+                <Grid Grid.Row="1"
+                      Margin="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Current Part Info -->
+                    <StackPanel Grid.Row="0" 
+                                Margin="20,20,20,10"
+                                Orientation="Horizontal">
+                        <TextBlock Text="Current: " 
+                                   FontSize="14"
+                                   FontWeight="SemiBold"
+                                   Foreground="#666666"/>
+                        <TextBlock x:Name="txtCurrentPart" 
+                                   FontSize="14"
+                                   FontWeight="Bold"
+                                   Foreground="#007ACC"/>
+                    </StackPanel>
+
+                    <!-- Part Selection -->
+                    <StackPanel Grid.Row="1" 
+                                Margin="20,0,20,10">
+                        <TextBlock Text="Select New Part Number:" 
+                                   FontSize="14"
+                                   FontWeight="SemiBold"
+                                   Foreground="#333333"
+                                   Margin="0,0,0,5"/>
+
+                        <ComboBox x:Name="cbPartNo"
+                                  Style="{StaticResource ModernComboBoxStyle}">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Content}" 
+                                               Padding="10,8,10,8"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Action Buttons -->
+                    <StackPanel Grid.Row="2" 
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="0,20,0,30">
+                        <Button x:Name="btnCancel" 
+                                Content="CANCEL"
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#666666"
+                                Click="btnCancel_Click"/>
+
+                        <Button x:Name="btnSave" 
+                                Content="SAVE CHANGES"
+                                Style="{StaticResource ModernButtonStyle}"
+                                Background="#4CAF50"
+                                Click="btnSave_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

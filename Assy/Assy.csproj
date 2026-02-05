@@ -10,11 +10,1479 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\8514OEM.FON" />
+    <None Remove="Fonts\AGENCYB.TTF" />
+    <None Remove="Fonts\AGENCYR.TTF" />
+    <None Remove="Fonts\ALGER.TTF" />
+    <None Remove="Fonts\ANTQUAB.TTF" />
+    <None Remove="Fonts\ANTQUABI.TTF" />
+    <None Remove="Fonts\ANTQUAI.TTF" />
+    <None Remove="Fonts\ARIAL.TTF" />
+    <None Remove="Fonts\ARIALBD.TTF" />
+    <None Remove="Fonts\ARIALBI.TTF" />
+    <None Remove="Fonts\ARIALI.TTF" />
+    <None Remove="Fonts\ARIALN.TTF" />
+    <None Remove="Fonts\ARIALNB.TTF" />
+    <None Remove="Fonts\ARIALNBI.TTF" />
+    <None Remove="Fonts\ARIALNI.TTF" />
+    <None Remove="Fonts\ARIBLK.TTF" />
+    <None Remove="Fonts\ARLRDBD.TTF" />
+    <None Remove="Fonts\BAHNSCHRIFT.TTF" />
+    <None Remove="Fonts\BASKVILL.TTF" />
+    <None Remove="Fonts\BAUHS93.TTF" />
+    <None Remove="Fonts\BELL.TTF" />
+    <None Remove="Fonts\BELLB.TTF" />
+    <None Remove="Fonts\BELLI.TTF" />
+    <None Remove="Fonts\BERNHC.TTF" />
+    <None Remove="Fonts\BKANT.TTF" />
+    <None Remove="Fonts\BOD_B.TTF" />
+    <None Remove="Fonts\BOD_BI.TTF" />
+    <None Remove="Fonts\BOD_BLAI.TTF" />
+    <None Remove="Fonts\BOD_BLAR.TTF" />
+    <None Remove="Fonts\BOD_CB.TTF" />
+    <None Remove="Fonts\BOD_CBI.TTF" />
+    <None Remove="Fonts\BOD_CI.TTF" />
+    <None Remove="Fonts\BOD_CR.TTF" />
+    <None Remove="Fonts\BOD_I.TTF" />
+    <None Remove="Fonts\BOD_PSTC.TTF" />
+    <None Remove="Fonts\BOD_R.TTF" />
+    <None Remove="Fonts\BOOKOS.TTF" />
+    <None Remove="Fonts\BOOKOSB.TTF" />
+    <None Remove="Fonts\BOOKOSBI.TTF" />
+    <None Remove="Fonts\BOOKOSI.TTF" />
+    <None Remove="Fonts\BRADHITC.TTF" />
+    <None Remove="Fonts\BRITANIC.TTF" />
+    <None Remove="Fonts\BRLNSB.TTF" />
+    <None Remove="Fonts\BRLNSDB.TTF" />
+    <None Remove="Fonts\BRLNSR.TTF" />
+    <None Remove="Fonts\BROADW.TTF" />
+    <None Remove="Fonts\BRUSHSCI.TTF" />
+    <None Remove="Fonts\BSSYM7.TTF" />
+    <None Remove="Fonts\CALIBRI.TTF" />
+    <None Remove="Fonts\CALIBRIB.TTF" />
+    <None Remove="Fonts\CALIBRII.TTF" />
+    <None Remove="Fonts\CALIBRIL.TTF" />
+    <None Remove="Fonts\CALIBRILI.TTF" />
+    <None Remove="Fonts\CALIBRIZ.TTF" />
+    <None Remove="Fonts\CALIFB.TTF" />
+    <None Remove="Fonts\CALIFI.TTF" />
+    <None Remove="Fonts\CALIFR.TTF" />
+    <None Remove="Fonts\CALIST.TTF" />
+    <None Remove="Fonts\CALISTB.TTF" />
+    <None Remove="Fonts\CALISTBI.TTF" />
+    <None Remove="Fonts\CALISTI.TTF" />
+    <None Remove="Fonts\CAMBRIA.TTC" />
+    <None Remove="Fonts\CAMBRIAB.TTF" />
+    <None Remove="Fonts\CAMBRIAI.TTF" />
+    <None Remove="Fonts\CAMBRIAZ.TTF" />
+    <None Remove="Fonts\CANDARA.TTF" />
+    <None Remove="Fonts\CANDARAB.TTF" />
+    <None Remove="Fonts\CANDARAI.TTF" />
+    <None Remove="Fonts\CANDARAL.TTF" />
+    <None Remove="Fonts\CANDARALI.TTF" />
+    <None Remove="Fonts\CANDARAZ.TTF" />
+    <None Remove="Fonts\CASCADIACODE.TTF" />
+    <None Remove="Fonts\CASCADIAMONO.TTF" />
+    <None Remove="Fonts\CASTELAR.TTF" />
+    <None Remove="Fonts\CENSCBK.TTF" />
+    <None Remove="Fonts\CENTAUR.TTF" />
+    <None Remove="Fonts\CENTURY.TTF" />
+    <None Remove="Fonts\CHILLER.TTF" />
+    <None Remove="Fonts\COLONNA.TTF" />
+    <None Remove="Fonts\COMIC.TTF" />
+    <None Remove="Fonts\COMICBD.TTF" />
+    <None Remove="Fonts\COMICI.TTF" />
+    <None Remove="Fonts\COMICZ.TTF" />
+    <None Remove="Fonts\CONSOLA.TTF" />
+    <None Remove="Fonts\CONSOLAB.TTF" />
+    <None Remove="Fonts\CONSOLAI.TTF" />
+    <None Remove="Fonts\CONSOLAZ.TTF" />
+    <None Remove="Fonts\CONSTAN.TTF" />
+    <None Remove="Fonts\CONSTANB.TTF" />
+    <None Remove="Fonts\CONSTANI.TTF" />
+    <None Remove="Fonts\CONSTANZ.TTF" />
+    <None Remove="Fonts\COOPBL.TTF" />
+    <None Remove="Fonts\COPRGTB.TTF" />
+    <None Remove="Fonts\COPRGTL.TTF" />
+    <None Remove="Fonts\CORBEL.TTF" />
+    <None Remove="Fonts\CORBELB.TTF" />
+    <None Remove="Fonts\CORBELI.TTF" />
+    <None Remove="Fonts\CORBELL.TTF" />
+    <None Remove="Fonts\CORBELLI.TTF" />
+    <None Remove="Fonts\CORBELZ.TTF" />
+    <None Remove="Fonts\COUR.TTF" />
+    <None Remove="Fonts\COURBD.TTF" />
+    <None Remove="Fonts\COURBI.TTF" />
+    <None Remove="Fonts\COURE.FON" />
+    <None Remove="Fonts\COURI.TTF" />
+    <None Remove="Fonts\CURLZ___.TTF" />
+    <None Remove="Fonts\DOSAPP.FON" />
+    <None Remove="Fonts\DUBAI-BOLD.TTF" />
+    <None Remove="Fonts\DUBAI-LIGHT.TTF" />
+    <None Remove="Fonts\DUBAI-MEDIUM.TTF" />
+    <None Remove="Fonts\DUBAI-REGULAR.TTF" />
+    <None Remove="Fonts\EBRIMA.TTF" />
+    <None Remove="Fonts\EBRIMABD.TTF" />
+    <None Remove="Fonts\ELEPHNT.TTF" />
+    <None Remove="Fonts\ELEPHNTI.TTF" />
+    <None Remove="Fonts\ENGR.TTF" />
+    <None Remove="Fonts\ERASBD.TTF" />
+    <None Remove="Fonts\ERASDEMI.TTF" />
+    <None Remove="Fonts\ERASLGHT.TTF" />
+    <None Remove="Fonts\ERASMD.TTF" />
+    <None Remove="Fonts\FELIXTI.TTF" />
+    <None Remove="Fonts\FORTE.TTF" />
+    <None Remove="Fonts\FRABK.TTF" />
+    <None Remove="Fonts\FRABKIT.TTF" />
+    <None Remove="Fonts\FRADM.TTF" />
+    <None Remove="Fonts\FRADMCN.TTF" />
+    <None Remove="Fonts\FRADMIT.TTF" />
+    <None Remove="Fonts\FRAHV.TTF" />
+    <None Remove="Fonts\FRAHVIT.TTF" />
+    <None Remove="Fonts\FRAMD.TTF" />
+    <None Remove="Fonts\FRAMDCN.TTF" />
+    <None Remove="Fonts\FRAMDIT.TTF" />
+    <None Remove="Fonts\FREESCPT.TTF" />
+    <None Remove="Fonts\FRSCRIPT.TTF" />
+    <None Remove="Fonts\FTLTLT.TTF" />
+    <None Remove="Fonts\FZSTK.TTF" />
+    <None Remove="Fonts\FZYTK.TTF" />
+    <None Remove="Fonts\GABRIOLA.TTF" />
+    <None Remove="Fonts\GADUGI.TTF" />
+    <None Remove="Fonts\GADUGIB.TTF" />
+    <None Remove="Fonts\GARA.TTF" />
+    <None Remove="Fonts\GARABD.TTF" />
+    <None Remove="Fonts\GARAIT.TTF" />
+    <None Remove="Fonts\GEORGIA.TTF" />
+    <None Remove="Fonts\GEORGIAB.TTF" />
+    <None Remove="Fonts\GEORGIAI.TTF" />
+    <None Remove="Fonts\GEORGIAZ.TTF" />
+    <None Remove="Fonts\GIGI.TTF" />
+    <None Remove="Fonts\GILBI___.TTF" />
+    <None Remove="Fonts\GILB____.TTF" />
+    <None Remove="Fonts\GILC____.TTF" />
+    <None Remove="Fonts\GILI____.TTF" />
+    <None Remove="Fonts\GILLUBCD.TTF" />
+    <None Remove="Fonts\GILSANUB.TTF" />
+    <None Remove="Fonts\GIL_____.TTF" />
+    <None Remove="Fonts\GLECB.TTF" />
+    <None Remove="Fonts\GLSNECB.TTF" />
+    <None Remove="Fonts\GOTHIC.TTF" />
+    <None Remove="Fonts\GOTHICB.TTF" />
+    <None Remove="Fonts\GOTHICBI.TTF" />
+    <None Remove="Fonts\GOTHICI.TTF" />
+    <None Remove="Fonts\GOUDOS.TTF" />
+    <None Remove="Fonts\GOUDOSB.TTF" />
+    <None Remove="Fonts\GOUDOSI.TTF" />
+    <None Remove="Fonts\GOUDYSTO.TTF" />
+    <None Remove="Fonts\HARLOWSI.TTF" />
+    <None Remove="Fonts\HARNGTON.TTF" />
+    <None Remove="Fonts\HATTEN.TTF" />
+    <None Remove="Fonts\HIMALAYA.TTF" />
+    <None Remove="Fonts\HTOWERT.TTF" />
+    <None Remove="Fonts\HTOWERTI.TTF" />
+    <None Remove="Fonts\IMPACT.TTF" />
+    <None Remove="Fonts\IMPRISHA.TTF" />
+    <None Remove="Fonts\INFROMAN.TTF" />
+    <None Remove="Fonts\INKFREE.TTF" />
+    <None Remove="Fonts\ITCBLKAD.TTF" />
+    <None Remove="Fonts\ITCEDSCR.TTF" />
+    <None Remove="Fonts\ITCKRIST.TTF" />
+    <None Remove="Fonts\JAVATEXT.TTF" />
+    <None Remove="Fonts\JOKERMAN.TTF" />
+    <None Remove="Fonts\JUICE___.TTF" />
+    <None Remove="Fonts\KUNSTLER.TTF" />
+    <None Remove="Fonts\LATINWD.TTF" />
+    <None Remove="Fonts\LBRITE.TTF" />
+    <None Remove="Fonts\LBRITED.TTF" />
+    <None Remove="Fonts\LBRITEDI.TTF" />
+    <None Remove="Fonts\LBRITEI.TTF" />
+    <None Remove="Fonts\LCALLIG.TTF" />
+    <None Remove="Fonts\LEELAUIB.TTF" />
+    <None Remove="Fonts\LEELAWUI.TTF" />
+    <None Remove="Fonts\LEELUISL.TTF" />
+    <None Remove="Fonts\LFAX.TTF" />
+    <None Remove="Fonts\LFAXD.TTF" />
+    <None Remove="Fonts\LFAXDI.TTF" />
+    <None Remove="Fonts\LFAXI.TTF" />
+    <None Remove="Fonts\LHANDW.TTF" />
+    <None Remove="Fonts\LSANS.TTF" />
+    <None Remove="Fonts\LSANSD.TTF" />
+    <None Remove="Fonts\LSANSDI.TTF" />
+    <None Remove="Fonts\LSANSI.TTF" />
+    <None Remove="Fonts\LTYPE.TTF" />
+    <None Remove="Fonts\LTYPEB.TTF" />
+    <None Remove="Fonts\LTYPEBO.TTF" />
+    <None Remove="Fonts\LTYPEO.TTF" />
+    <None Remove="Fonts\LUCON.TTF" />
+    <None Remove="Fonts\L_10646.TTF" />
+    <None Remove="Fonts\MAGNETOB.TTF" />
+    <None Remove="Fonts\MAIAN.TTF" />
+    <None Remove="Fonts\MALGUN.TTF" />
+    <None Remove="Fonts\MALGUNBD.TTF" />
+    <None Remove="Fonts\MALGUNSL.TTF" />
+    <None Remove="Fonts\MATURASC.TTF" />
+    <None Remove="Fonts\MICROSS.TTF" />
+    <None Remove="Fonts\MINGLIUB.TTC" />
+    <None Remove="Fonts\MISTRAL.TTF" />
+    <None Remove="Fonts\MMRTEXT.TTF" />
+    <None Remove="Fonts\MMRTEXTB.TTF" />
+    <None Remove="Fonts\MOD20.TTF" />
+    <None Remove="Fonts\MODERN.FON" />
+    <None Remove="Fonts\MONBAITI.TTF" />
+    <None Remove="Fonts\MSGOTHIC.TTC" />
+    <None Remove="Fonts\MSJH.TTC" />
+    <None Remove="Fonts\MSJHBD.TTC" />
+    <None Remove="Fonts\MSJHL.TTC" />
+    <None Remove="Fonts\MSUIGHUB.TTF" />
+    <None Remove="Fonts\MSUIGHUR.TTF" />
+    <None Remove="Fonts\MSYH.TTC" />
+    <None Remove="Fonts\MSYHBD.TTC" />
+    <None Remove="Fonts\MSYHL.TTC" />
+    <None Remove="Fonts\MSYI.TTF" />
+    <None Remove="Fonts\MTCORSVA.TTF" />
+    <None Remove="Fonts\MTEXTRA.TTF" />
+    <None Remove="Fonts\MVBOLI.TTF" />
+    <None Remove="Fonts\NIAGENG.TTF" />
+    <None Remove="Fonts\NIAGSOL.TTF" />
+    <None Remove="Fonts\NIRMALA.TTC" />
+    <None Remove="Fonts\NTAILU.TTF" />
+    <None Remove="Fonts\NTAILUB.TTF" />
+    <None Remove="Fonts\OCRAEXT.TTF" />
+    <None Remove="Fonts\OLDENGL.TTF" />
+    <None Remove="Fonts\ONYX.TTF" />
+    <None Remove="Fonts\OUTLOOK.TTF" />
+    <None Remove="Fonts\PALA.TTF" />
+    <None Remove="Fonts\PALAB.TTF" />
+    <None Remove="Fonts\PALABI.TTF" />
+    <None Remove="Fonts\PALAI.TTF" />
+    <None Remove="Fonts\PALSCRI.TTF" />
+    <None Remove="Fonts\PAPYRUS.TTF" />
+    <None Remove="Fonts\PARCHM.TTF" />
+    <None Remove="Fonts\PERBI___.TTF" />
+    <None Remove="Fonts\PERB____.TTF" />
+    <None Remove="Fonts\PERI____.TTF" />
+    <None Remove="Fonts\PERTIBD.TTF" />
+    <None Remove="Fonts\PERTILI.TTF" />
+    <None Remove="Fonts\PER_____.TTF" />
+    <None Remove="Fonts\PHAGSPA.TTF" />
+    <None Remove="Fonts\PHAGSPAB.TTF" />
+    <None Remove="Fonts\PLAYBILL.TTF" />
+    <None Remove="Fonts\POORICH.TTF" />
+    <None Remove="Fonts\PRISTINA.TTF" />
+    <None Remove="Fonts\RAGE.TTF" />
+    <None Remove="Fonts\RAVIE.TTF" />
+    <None Remove="Fonts\REFSAN.TTF" />
+    <None Remove="Fonts\REFSPCL.TTF" />
+    <None Remove="Fonts\ROCCB___.TTF" />
+    <None Remove="Fonts\ROCC____.TTF" />
+    <None Remove="Fonts\ROCK.TTF" />
+    <None Remove="Fonts\ROCKB.TTF" />
+    <None Remove="Fonts\ROCKBI.TTF" />
+    <None Remove="Fonts\ROCKEB.TTF" />
+    <None Remove="Fonts\ROCKI.TTF" />
+    <None Remove="Fonts\ROGFONTS-REGULAR.OTF" />
+    <None Remove="Fonts\ROMAN.FON" />
+    <None Remove="Fonts\SANSSERIFCOLLECTION.TTF" />
+    <None Remove="Fonts\SCHLBKB.TTF" />
+    <None Remove="Fonts\SCHLBKBI.TTF" />
+    <None Remove="Fonts\SCHLBKI.TTF" />
+    <None Remove="Fonts\SCRIPT.FON" />
+    <None Remove="Fonts\SCRIPTBL.TTF" />
+    <None Remove="Fonts\SEGMDL2.TTF" />
+    <None Remove="Fonts\SEGOEICONS.TTF" />
+    <None Remove="Fonts\SEGOEPR.TTF" />
+    <None Remove="Fonts\SEGOEPRB.TTF" />
+    <None Remove="Fonts\SEGOESC.TTF" />
+    <None Remove="Fonts\SEGOESCB.TTF" />
+    <None Remove="Fonts\SEGOEUI.TTF" />
+    <None Remove="Fonts\SEGOEUIB.TTF" />
+    <None Remove="Fonts\SEGOEUII.TTF" />
+    <None Remove="Fonts\SEGOEUIL.TTF" />
+    <None Remove="Fonts\SEGOEUISL.TTF" />
+    <None Remove="Fonts\SEGOEUIZ.TTF" />
+    <None Remove="Fonts\SEGUIBL.TTF" />
+    <None Remove="Fonts\SEGUIBLI.TTF" />
+    <None Remove="Fonts\SEGUIEMJ.TTF" />
+    <None Remove="Fonts\SEGUIHIS.TTF" />
+    <None Remove="Fonts\SEGUILI.TTF" />
+    <None Remove="Fonts\SEGUISB.TTF" />
+    <None Remove="Fonts\SEGUISBI.TTF" />
+    <None Remove="Fonts\SEGUISLI.TTF" />
+    <None Remove="Fonts\SEGUISYM.TTF" />
+    <None Remove="Fonts\SEGUIVAR.TTF" />
+    <None Remove="Fonts\SERIFE.FON" />
+    <None Remove="Fonts\SHOWG.TTF" />
+    <None Remove="Fonts\SIMLI.TTF" />
+    <None Remove="Fonts\SIMSUN.TTC" />
+    <None Remove="Fonts\SIMSUNB.TTF" />
+    <None Remove="Fonts\SIMSUNEXTG.TTF" />
+    <None Remove="Fonts\SIMYOU.TTF" />
+    <None Remove="Fonts\SITKAVF-ITALIC.TTF" />
+    <None Remove="Fonts\SITKAVF.TTF" />
+    <None Remove="Fonts\SMALLE.FON" />
+    <None Remove="Fonts\SNAP____.TTF" />
+    <None Remove="Fonts\SSERIFE.FON" />
+    <None Remove="Fonts\STCAIYUN.TTF" />
+    <None Remove="Fonts\STENCIL.TTF" />
+    <None Remove="Fonts\STFANGSO.TTF" />
+    <None Remove="Fonts\STHUPO.TTF" />
+    <None Remove="Fonts\STKAITI.TTF" />
+    <None Remove="Fonts\STLITI.TTF" />
+    <None Remove="Fonts\STSONG.TTF" />
+    <None Remove="Fonts\STXIHEI.TTF" />
+    <None Remove="Fonts\STXINGKA.TTF" />
+    <None Remove="Fonts\STXINWEI.TTF" />
+    <None Remove="Fonts\STZHONGS.TTF" />
+    <None Remove="Fonts\SYLFAEN.TTF" />
+    <None Remove="Fonts\SYMBOL.TTF" />
+    <None Remove="Fonts\TAHOMA.TTF" />
+    <None Remove="Fonts\TAHOMABD.TTF" />
+    <None Remove="Fonts\TAILE.TTF" />
+    <None Remove="Fonts\TAILEB.TTF" />
+    <None Remove="Fonts\TCBI____.TTF" />
+    <None Remove="Fonts\TCB_____.TTF" />
+    <None Remove="Fonts\TCCB____.TTF" />
+    <None Remove="Fonts\TCCEB.TTF" />
+    <None Remove="Fonts\TCCM____.TTF" />
+    <None Remove="Fonts\TCMI____.TTF" />
+    <None Remove="Fonts\TCM_____.TTF" />
+    <None Remove="Fonts\TEMPSITC.TTF" />
+    <None Remove="Fonts\TIMES.TTF" />
+    <None Remove="Fonts\TIMESBD.TTF" />
+    <None Remove="Fonts\TIMESBI.TTF" />
+    <None Remove="Fonts\TIMESI.TTF" />
+    <None Remove="Fonts\TREBUC.TTF" />
+    <None Remove="Fonts\TREBUCBD.TTF" />
+    <None Remove="Fonts\TREBUCBI.TTF" />
+    <None Remove="Fonts\TREBUCIT.TTF" />
+    <None Remove="Fonts\VERDANA.TTF" />
+    <None Remove="Fonts\VERDANAB.TTF" />
+    <None Remove="Fonts\VERDANAI.TTF" />
+    <None Remove="Fonts\VERDANAZ.TTF" />
+    <None Remove="Fonts\VGAFIX.FON" />
+    <None Remove="Fonts\VGAOEM.FON" />
+    <None Remove="Fonts\VGASYS.FON" />
+    <None Remove="Fonts\VINERITC.TTF" />
+    <None Remove="Fonts\VIVALDII.TTF" />
+    <None Remove="Fonts\VLADIMIR.TTF" />
+    <None Remove="Fonts\WEBDINGS.TTF" />
+    <None Remove="Fonts\WINGDING.TTF" />
+    <None Remove="Fonts\WINGDNG2.TTF" />
+    <None Remove="Fonts\WINGDNG3.TTF" />
+    <None Remove="Fonts\YUGOTHB.TTC" />
+    <None Remove="Fonts\YUGOTHL.TTC" />
+    <None Remove="Fonts\YUGOTHM.TTC" />
+    <None Remove="Fonts\YUGOTHR.TTC" />
+    <None Remove="img\logoipg.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="img\logoipg.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="logoipg.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Fonts\8514OEM.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\AGENCYB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\AGENCYR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ALGER.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ANTQUAB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ANTQUABI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ANTQUAI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIAL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIALBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIALBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIALI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIALN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIALNB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIALNBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIALNI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARIBLK.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ARLRDBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BAHNSCHRIFT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BASKVILL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BAUHS93.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BELL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BELLB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BELLI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BERNHC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BKANT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_B.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_BI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_BLAI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_BLAR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_CB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_CBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_CI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_CR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_I.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_PSTC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOD_R.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOOKOS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOOKOSB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOOKOSBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BOOKOSI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BRADHITC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BRITANIC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BRLNSB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BRLNSDB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BRLNSR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BROADW.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BRUSHSCI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\BSSYM7.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIBRI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIBRIB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIBRII.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIBRIL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIBRILI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIBRIZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIFB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIFI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIFR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALIST.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALISTB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALISTBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CALISTI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CAMBRIA.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CAMBRIAB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CAMBRIAI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CAMBRIAZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CANDARA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CANDARAB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CANDARAI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CANDARAL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CANDARALI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CANDARAZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CASCADIACODE.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CASCADIAMONO.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CASTELAR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CENSCBK.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CENTAUR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CENTURY.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CHILLER.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COLONNA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COMIC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COMICBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COMICI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COMICZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CONSOLA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CONSOLAB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CONSOLAI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CONSOLAZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CONSTAN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CONSTANB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CONSTANI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CONSTANZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COOPBL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COPRGTB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COPRGTL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CORBEL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CORBELB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CORBELI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CORBELL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CORBELLI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CORBELZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COUR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COURBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COURBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COURE.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\COURI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\CURLZ___.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\DOSAPP.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\DUBAI-BOLD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\DUBAI-LIGHT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\DUBAI-MEDIUM.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\DUBAI-REGULAR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\EBRIMA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\EBRIMABD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ELEPHNT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ELEPHNTI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ENGR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ERASBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ERASDEMI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ERASLGHT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ERASMD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FELIXTI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FORTE.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRABK.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRABKIT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRADM.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRADMCN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRADMIT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRAHV.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRAHVIT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRAMD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRAMDCN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRAMDIT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FREESCPT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FRSCRIPT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FTLTLT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FZSTK.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\FZYTK.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GABRIOLA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GADUGI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GADUGIB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GARA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GARABD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GARAIT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GEORGIA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GEORGIAB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GEORGIAI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GEORGIAZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GIGI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GILBI___.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GILB____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GILC____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GILI____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GILLUBCD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GILSANUB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GIL_____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GLECB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GLSNECB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GOTHIC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GOTHICB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GOTHICBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GOTHICI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GOUDOS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GOUDOSB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GOUDOSI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\GOUDYSTO.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\HARLOWSI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\HARNGTON.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\HATTEN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\HIMALAYA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\HTOWERT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\HTOWERTI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\IMPACT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\IMPRISHA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\INFROMAN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\INKFREE.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ITCBLKAD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ITCEDSCR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ITCKRIST.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\JAVATEXT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\JOKERMAN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\JUICE___.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\KUNSTLER.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LATINWD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LBRITE.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LBRITED.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LBRITEDI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LBRITEI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LCALLIG.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LEELAUIB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LEELAWUI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LEELUISL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LFAX.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LFAXD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LFAXDI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LFAXI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LHANDW.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LSANS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LSANSD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LSANSDI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LSANSI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LTYPE.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LTYPEB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LTYPEBO.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LTYPEO.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\LUCON.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\L_10646.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MAGNETOB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MAIAN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MALGUN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MALGUNBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MALGUNSL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MATURASC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MICROSS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MINGLIUB.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MISTRAL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MMRTEXT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MMRTEXTB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MOD20.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MODERN.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MONBAITI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSGOTHIC.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSJH.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSJHBD.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSJHL.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSUIGHUB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSUIGHUR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSYH.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSYHBD.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSYHL.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MSYI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MTCORSVA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MTEXTRA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\MVBOLI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\NIAGENG.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\NIAGSOL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\NIRMALA.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\NTAILU.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\NTAILUB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\OCRAEXT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\OLDENGL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ONYX.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\OUTLOOK.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PALA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PALAB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PALABI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PALAI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PALSCRI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PAPYRUS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PARCHM.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PERBI___.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PERB____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PERI____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PERTIBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PERTILI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PER_____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PHAGSPA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PHAGSPAB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PLAYBILL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\POORICH.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\PRISTINA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\RAGE.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\RAVIE.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\REFSAN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\REFSPCL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROCCB___.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROCC____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROCK.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROCKB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROCKBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROCKEB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROCKI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROGFONTS-REGULAR.OTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\ROMAN.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SANSSERIFCOLLECTION.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SCHLBKB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SCHLBKBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SCHLBKI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SCRIPT.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SCRIPTBL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGMDL2.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEICONS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEPR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEPRB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOESC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOESCB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEUI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEUIB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEUII.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEUIL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEUISL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGOEUIZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUIBL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUIBLI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUIEMJ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUIHIS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUILI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUISB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUISBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUISLI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUISYM.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SEGUIVAR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SERIFE.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SHOWG.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SIMLI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SIMSUN.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SIMSUNB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SIMSUNEXTG.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SIMYOU.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SITKAVF-ITALIC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SITKAVF.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SMALLE.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SNAP____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SSERIFE.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STCAIYUN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STENCIL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STFANGSO.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STHUPO.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STKAITI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STLITI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STSONG.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STXIHEI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STXINGKA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STXINWEI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\STZHONGS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SYLFAEN.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\SYMBOL.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TAHOMA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TAHOMABD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TAILE.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TAILEB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TCBI____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TCB_____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TCCB____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TCCEB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TCCM____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TCMI____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TCM_____.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TEMPSITC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TIMES.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TIMESBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TIMESBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TIMESI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TREBUC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TREBUCBD.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TREBUCBI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\TREBUCIT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VERDANA.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VERDANAB.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VERDANAI.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VERDANAZ.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VGAFIX.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VGAOEM.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VGASYS.FON">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VINERITC.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VIVALDII.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\VLADIMIR.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\WEBDINGS.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\WINGDING.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\WINGDNG2.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\WINGDNG3.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\YUGOTHB.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\YUGOTHL.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\YUGOTHM.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fonts\YUGOTHR.TTC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.4" />
     <PackageReference Include="PDFsharp" Version="6.2.4" />
+    <PackageReference Include="PDFsharp-MigraDoc" Version="6.2.4" />
   </ItemGroup>
 
 </Project>

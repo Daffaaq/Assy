@@ -3,85 +3,129 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Effects;
+using Microsoft.Data.SqlClient;
 
-namespace Assy
+namespace Assy.Views
 {
     public partial class TargetWindow : Window
     {
-        private string supervisor;
-        private string machine;
-        private string partNo;
-        private string selectedShift = "";
+        #region Fields & Properties
+        private string? operatorName;
+        private string? supervisorName;
+        private string? machine;
+        private string? partNo;
+        private int selectedShift = 1; // ✅ INTEGER
         private int targetPerShift = 0;
 
-        public TargetWindow(string supervisor, string machine, string partNo)
+        private string connectionString = @"Server=YOUR_SERVER_NAME;Database=assy;User Id=YOUR_USER;Password=YOUR_PASSWORD;TrustServerCertificate=true;";
+        #endregion
+
+        #region Constructor & Initialization
+        public TargetWindow()
         {
             InitializeComponent();
+            LoadUserData();
+            InitializeShiftButtons();
+        }
+        #endregion
 
-            this.supervisor = supervisor;
-            this.machine = machine;
-            this.partNo = partNo;
+        #region Data Loading Methods
+        private void LoadUserData()
+        {
+            try
+            {
+                this.operatorName = App.OperatorNama;
+                this.supervisorName = App.SupervisorNama;
+                this.machine = App.MachineNumber;
+                this.partNo = App.PartNumber;
 
-            // Tampilkan data user
-            txtSupervisor.Text = supervisor;
-            txtMachine.Text = machine;
-            txtPartNo.Text = partNo;
+                txtOperator.Text = $"{App.LoggedInUserNoreg} - {operatorName}";
+                txtSupervisor.Text = $"{App.SupervisorNoreg} - {supervisorName}";
+                txtMachine.Text = machine;
+                txtPartNo.Text = partNo;
 
-            // Set default shift ke Shift 1
-            SelectShift("Shift 1");
+                // ✅ Tidak perlu panggil SelectShift di sini karena sudah di InitializeShiftButtons
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading user data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        #endregion
+
+        #region Shift Management
+        private void InitializeShiftButtons()
+        {
+            // Default ke Shift 1
+            SelectShift(1); // ✅ PARAMETER INT
         }
 
-        private void SelectShift(string shift)
+        private void SelectShift(int shiftValue)
         {
-            selectedShift = shift;
+            selectedShift = shiftValue;
 
-            // Reset warna kedua border
-            borderShift1.Background = new SolidColorBrush(Color.FromRgb(224, 224, 224)); // #E0E0E0
-            borderShift2.Background = new SolidColorBrush(Color.FromRgb(224, 224, 224));
-
-            // Set warna border yang dipilih
-            if (shift == "Shift 1")
+            // Update UI
+            if (shiftValue == 1)
             {
-                borderShift1.Background = new SolidColorBrush(Color.FromRgb(0, 120, 212)); // #0078D4
+                btnShift1.Background = new SolidColorBrush(Color.FromRgb(30, 64, 175));
+                if (btnShift1.Content is StackPanel stack1 && stack1.Children.Count > 0)
+                {
+                    if (stack1.Children[0] is TextBlock tb) tb.Foreground = Brushes.White;
+                }
 
-                // Update teks Shift 1
-                ((TextBlock)((StackPanel)borderShift1.Child).Children[0]).Foreground = Brushes.White;
-                ((TextBlock)((StackPanel)borderShift1.Child).Children[1]).Foreground = Brushes.LightGray;
-
-                // Update teks Shift 2
-                ((TextBlock)((StackPanel)borderShift2.Child).Children[0]).Foreground = Brushes.Gray;
-                ((TextBlock)((StackPanel)borderShift2.Child).Children[1]).Foreground = Brushes.DarkGray;
+                btnShift2.Background = new SolidColorBrush(Color.FromRgb(229, 231, 235));
+                if (btnShift2.Content is StackPanel stack2 && stack2.Children.Count > 0)
+                {
+                    if (stack2.Children[0] is TextBlock tb) tb.Foreground = new SolidColorBrush(Color.FromRgb(75, 85, 99));
+                }
             }
-            else if (shift == "Shift 2")
+            else if (shiftValue == 2)
             {
-                borderShift2.Background = new SolidColorBrush(Color.FromRgb(0, 120, 212)); // #0078D4
+                btnShift2.Background = new SolidColorBrush(Color.FromRgb(30, 64, 175));
+                if (btnShift2.Content is StackPanel stack2 && stack2.Children.Count > 0)
+                {
+                    if (stack2.Children[0] is TextBlock tb) tb.Foreground = Brushes.White;
+                }
 
-                // Update teks Shift 2
-                ((TextBlock)((StackPanel)borderShift2.Child).Children[0]).Foreground = Brushes.White;
-                ((TextBlock)((StackPanel)borderShift2.Child).Children[1]).Foreground = Brushes.LightGray;
-
-                // Update teks Shift 1
-                ((TextBlock)((StackPanel)borderShift1.Child).Children[0]).Foreground = Brushes.Gray;
-                ((TextBlock)((StackPanel)borderShift1.Child).Children[1]).Foreground = Brushes.DarkGray;
+                btnShift1.Background = new SolidColorBrush(Color.FromRgb(229, 231, 235));
+                if (btnShift1.Content is StackPanel stack1 && stack1.Children.Count > 0)
+                {
+                    if (stack1.Children[0] is TextBlock tb) tb.Foreground = new SolidColorBrush(Color.FromRgb(75, 85, 99));
+                }
             }
 
-            // Check jika target sudah diisi untuk enable button
             CheckFormComplete();
         }
+        #endregion
 
-        private void Shift1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        #region Event Handlers
+        // ✅ GANTI PARAMETER KE INT
+        private void ShiftButton_Click(object sender, RoutedEventArgs e)
         {
-            SelectShift("Shift 1");
+            var button = sender as Button;
+            if (button != null && button.Tag != null)
+            {
+                if (int.TryParse(button.Tag.ToString(), out int shiftValue))
+                {
+                    SelectShift(shiftValue);
+                }
+            }
         }
 
-        private void Shift2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        // ✅ GANTI KE OVERLOAD INT
+        private void Shift1_Click(object sender, RoutedEventArgs e)
         {
-            SelectShift("Shift 2");
+            SelectShift(1);
+        }
+
+        private void Shift2_Click(object sender, RoutedEventArgs e)
+        {
+            SelectShift(2);
         }
 
         private void txtTarget_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            // Hanya allow angka
             foreach (char c in e.Text)
             {
                 if (!char.IsDigit(c))
@@ -106,58 +150,6 @@ namespace Assy
             CheckFormComplete();
         }
 
-        private void CheckFormComplete()
-        {
-            // Enable button hanya jika target > 0 dan shift sudah dipilih
-            btnStart.IsEnabled = targetPerShift > 0 && !string.IsNullOrEmpty(selectedShift);
-        }
-
-        private void btnStart_Click(object sender, RoutedEventArgs e)
-        {
-            if (targetPerShift <= 0)
-            {
-                MessageBox.Show("Target harus lebih dari 0!", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            if (string.IsNullOrEmpty(selectedShift))
-            {
-                MessageBox.Show("Pilih shift terlebih dahulu!", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            // Simpan data ke App properties
-            App.TargetPerShift = targetPerShift;
-            App.SelectedShift = selectedShift;
-            App.ProductionDate = DateTime.Now;
-
-            // Konfirmasi
-            var result = MessageBox.Show(
-                $"Konfirmasi Target Produksi:\n\n" +
-                $"🎯 Target/Shift: {targetPerShift:N0} units\n" +
-                $"⏰ Shift: {selectedShift}\n" +
-                $"📅 Tanggal: {DateTime.Now:dd/MM/yyyy}\n\n" +
-                $"Apakah data sudah benar?",
-                "Konfirmasi Target",
-                MessageBoxButton.YesNo,
-                MessageBoxImage.Question);
-
-            if (result == MessageBoxResult.Yes)
-            {
-                // Buka MainWindow
-                var mainWindow = new MainWindow();
-                mainWindow.WindowState = WindowState.Maximized;
-                mainWindow.WindowStyle = WindowStyle.None;
-                mainWindow.Show();
-
-                // Tutup TargetWindow
-                this.Close();
-            }
-        }
-
-        // Handle Enter key pada textbox target
         private void txtTarget_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
@@ -165,5 +157,103 @@ namespace Assy
                 CheckFormComplete();
             }
         }
+
+        private void txtTarget_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (targetInputBorder != null)
+            {
+                targetInputBorder.BorderBrush = new SolidColorBrush(Color.FromRgb(220, 38, 38));
+                targetInputBorder.Effect = null;
+            }
+        }
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+            if (targetPerShift <= 0)
+            {
+                MessageBox.Show("Target harus lebih dari 0!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (selectedShift <= 0) // ✅ INT COMPARISON
+            {
+                MessageBox.Show("Pilih shift terlebih dahulu!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // ✅ SIMPAN KE APP SEBAGAI INT
+            App.TargetPerShift = targetPerShift;
+            App.SelectedShift = selectedShift; // ✅ INTEGER
+            App.ProductionDate = DateTime.Now;
+
+            // ✅ SIMPAN KE DATABASE
+            SaveTargetToDatabase();
+
+            var mainWindow = new MainWindow();
+            mainWindow.WindowState = WindowState.Maximized;
+            mainWindow.WindowStyle = WindowStyle.SingleBorderWindow;
+            mainWindow.Show();
+
+            this.Close();
+        }
+        #endregion
+
+        #region Validation & Form Logic
+        // ✅ PERBAIKI CHECK FORM
+        private void CheckFormComplete()
+        {
+            // selectedShift adalah INT, jadi cek > 0
+            btnStart.IsEnabled = targetPerShift > 0 && selectedShift > 0;
+        }
+        #endregion
+
+        #region Database Operations
+        private void SaveTargetToDatabase()
+        {
+            try
+            {
+                using (var conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = @"
+INSERT INTO target_data 
+(noreg, mesin, shift, target, created_at, supervisor, partno)
+VALUES 
+(@noreg, @mesin, @shift, @target, GETDATE(), @supervisor, @partno)";
+
+                    using (var cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@noreg", App.LoggedInUserNoreg);
+                        cmd.Parameters.AddWithValue("@mesin", App.MachineNumber);
+
+                        // ⚠️ PENTING: Cek tipe data kolom shift di database!
+                        // Jika kolom shift VARCHAR, gunakan:
+                        // cmd.Parameters.AddWithValue("@shift", selectedShift.ToString());
+                        // Jika kolom shift INT, gunakan:
+                        cmd.Parameters.AddWithValue("@shift", selectedShift);
+
+                        cmd.Parameters.AddWithValue("@target", targetPerShift);
+                        cmd.Parameters.AddWithValue("@supervisor", App.SupervisorNoreg);
+                        cmd.Parameters.AddWithValue("@partno", App.PartNumber);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            Console.WriteLine($"Target berhasil disimpan: Shift {selectedShift}, Target {targetPerShift}");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error SaveTargetToDatabase: {ex.Message}");
+                MessageBox.Show($"Gagal menyimpan target ke database: {ex.Message}",
+                               "Database Error",
+                               MessageBoxButton.OK,
+                               MessageBoxImage.Error);
+                throw;
+            }
+        }
+        #endregion
     }
 }

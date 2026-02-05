@@ -6,8 +6,11 @@ namespace Assy
 {
     public partial class UpdateTargetDialog : Window
     {
+        #region Properties
         public int TargetValue { get; set; }
+        #endregion
 
+        #region Constructor & Initialization
         public UpdateTargetDialog()
         {
             InitializeComponent();
@@ -23,7 +26,9 @@ namespace Assy
                 txtNewTarget.SelectAll();
             };
         }
+        #endregion
 
+        #region Event Handlers
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
             if (int.TryParse(txtNewTarget.Text, out int newTarget) && newTarget > 0)
@@ -46,5 +51,6 @@ namespace Assy
             DialogResult = false;
             Close();
         }
+        #endregion
     }
 }

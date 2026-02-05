@@ -11,13 +11,14 @@
         ResizeMode="CanResize"
         MinWidth="1200"
         MinHeight="700"
-        Background="#F0F2F5"
+        Background="#1E2A38"
         FontFamily="Segoe UI">
 
     <Window.Resources>
         <!-- Style untuk Button dengan corner radius -->
         <Style x:Key="RoundedButtonStyle" TargetType="Button">
             <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontSize" Value="18"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -25,7 +26,7 @@
                                 Background="{TemplateBinding Background}"
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="5">
+                                CornerRadius="8">
                             <ContentPresenter HorizontalAlignment="Center" 
                                             VerticalAlignment="Center"/>
                         </Border>
@@ -45,27 +46,26 @@
 
         <!-- Style untuk TextBox dengan corner radius -->
         <Style x:Key="RoundedTextBoxStyle" TargetType="TextBox">
-            <Setter Property="Background" Value="White"/>
+            <Setter Property="Background" Value="#FFFFFF"/>
             <Setter Property="Foreground" Value="#2C3E50"/>
             <Setter Property="BorderBrush" Value="#BDC3C7"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="Padding" Value="15"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="20"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
-            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontSize" Value="24"/>
             <Setter Property="CaretBrush" Value="#2C3E50"/>
             <Setter Property="SelectionBrush" Value="#3498DB"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-            <!-- Important! -->
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
                         <Border x:Name="border" 
-                        Background="{TemplateBinding Background}"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}"
-                        CornerRadius="5"
-                        SnapsToDevicePixels="True">
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="8"
+                                SnapsToDevicePixels="True">
                             <ScrollViewer x:Name="PART_ContentHost" 
                                 Focusable="False"
                                 HorizontalScrollBarVisibility="Hidden"
@@ -74,7 +74,7 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsFocused" Value="True">
                                 <Setter TargetName="border" Property="BorderBrush" Value="#3498DB"/>
-                                <Setter TargetName="border" Property="BorderThickness" Value="2"/>
+                                <Setter TargetName="border" Property="BorderThickness" Value="3"/>
                             </Trigger>
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter TargetName="border" Property="BorderBrush" Value="#2980B9"/>
@@ -87,13 +87,14 @@
 
         <!-- Style untuk Action Button -->
         <Style x:Key="ActionButtonStyle" TargetType="Button">
-            <Setter Property="Height" Value="50"/>
+            <Setter Property="Height" Value="60"/>
             <Setter Property="Margin" Value="0,0,0,10"/>
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderBrush" Value="#BDC3C7"/>
-            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#2C3E50"/>
+            <Setter Property="BorderBrush" Value="#3D566E"/>
+            <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -101,14 +102,14 @@
                                 Background="{TemplateBinding Background}"
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="5">
-                            <ContentPresenter Margin="10,0" 
+                                CornerRadius="8">
+                            <ContentPresenter Margin="15,0" 
                                             HorizontalAlignment="Left" 
                                             VerticalAlignment="Center"/>
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="border" Property="Background" Value="#F8F9FA"/>
+                                <Setter TargetName="border" Property="Background" Value="#34495E"/>
                                 <Setter TargetName="border" Property="BorderBrush" Value="#3498DB"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
@@ -119,16 +120,17 @@
 
         <!-- Style untuk tabel header -->
         <Style x:Key="TableHeaderStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontSize" Value="26"/>
             <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Foreground" Value="#2C3E50"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
 
         <!-- Style untuk sel tabel -->
         <Style x:Key="TableCellStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontSize" Value="23"/>
+            <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
@@ -137,166 +139,177 @@
         <Style x:Key="TableRowStyle" TargetType="Border">
             <Setter Property="Height" Value="50"/>
             <Setter Property="BorderThickness" Value="0,0,0,1"/>
-            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderBrush" Value="#3D566E"/>
         </Style>
     </Window.Resources>
 
-    <Grid>
+    <!-- Main Grid with dark background -->
+    <Grid Background="#1E2A38">
         <!-- Main Layout -->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Header -->
-        <Border Grid.Row="0" Background="#2C3E50" Height="70" Padding="0,0,20,0">
-            <Grid>
+        <!-- Header - Menampilkan informasi produksi -->
+        <Border Grid.Row="0" Background="#1A252F" Height="100">
+            <Grid Margin="15">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Logo -->
-                <Border Grid.Column="0" Background="#1A252F" Width="70" 
-                        HorizontalAlignment="Left">
-                    <Viewbox Stretch="Uniform">
-                        <TextBlock Text="🏭" FontSize="30" Foreground="White" 
-                                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                    </Viewbox>
+                <!-- Shift Info -->
+                <Border Grid.Column="0" Background="#3498DB" CornerRadius="8" 
+                Padding="15,10" Margin="0,0,15,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="🔄" FontSize="22" 
+                           VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <StackPanel>
+                            <TextBlock Text="SHIFT" FontSize="14" 
+                               Foreground="#E8F4FD" FontWeight="Medium"/>
+                            <TextBlock x:Name="txtShiftInfo" Text="SHIFT 1 (07:30-16:30)" 
+                               FontSize="18" FontWeight="Bold" 
+                               Foreground="White"/>
+                        </StackPanel>
+                    </StackPanel>
                 </Border>
 
-                <!-- Title -->
-                <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0">
-                    <TextBlock Text="ASSEMBLY PRODUCTION SYSTEM" 
-                               FontSize="18" 
-                               FontWeight="Bold" 
+                <!-- Machine Info -->
+                <Border Grid.Column="1" Background="#2C3E50" CornerRadius="8" 
+                Padding="15,10" Margin="0,0,15,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="⚙️" FontSize="22" 
+                           VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <StackPanel>
+                            <TextBlock Text="MACHINE" FontSize="14" 
+                               Foreground="#BDC3C7" FontWeight="Medium"/>
+                            <TextBlock x:Name="txtMachineNumber" Text="MCH-001" 
+                               FontSize="18" FontWeight="Bold" 
                                Foreground="White"/>
-                    <TextBlock Text="Real-time Monitoring Dashboard" 
-                               FontSize="12" 
-                               Foreground="#BDC3C7"
-                               Margin="0,2,0,0"/>
-                </StackPanel>
-
-                <!-- User Info & Time -->
-                <StackPanel Grid.Column="2" Orientation="Horizontal" 
-                            VerticalAlignment="Center" HorizontalAlignment="Right">
-                    <!-- Time Display -->
-                    <Border Background="#34495E" CornerRadius="15" Padding="12,8" Margin="0,0,15,0">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="🕐" FontSize="14" Foreground="White" 
-                                       VerticalAlignment="Center" Margin="0,0,8,0"/>
-                            <TextBlock x:Name="txtDateTime" Text="00:00:00" 
-                                       FontSize="14" FontWeight="SemiBold" 
-                                       Foreground="White" VerticalAlignment="Center"/>
                         </StackPanel>
-                    </Border>
+                    </StackPanel>
+                </Border>
 
-                    <!-- User Profile -->
-                    <Border Background="#34495E" CornerRadius="15" Padding="10">
-                        <StackPanel Orientation="Horizontal">
-                            <!-- Profile Photo (Placeholder) -->
-                            <Border Width="40" Height="40" CornerRadius="20" 
-                                    Background="#3498DB" Margin="0,0,10,0">
-                                <TextBlock Text="👤" FontSize="20" 
-                                           HorizontalAlignment="Center" 
-                                           VerticalAlignment="Center"/>
-                            </Border>
-
-                            <!-- User Details -->
-                            <StackPanel>
-                                <TextBlock x:Name="txtUserName" Text="Supervisor Name" 
-                                           FontSize="14" FontWeight="SemiBold" 
-                                           Foreground="White"/>
-                                <TextBlock x:Name="txtUserNoreg" Text="Noreg: 000000" 
-                                           FontSize="11" Foreground="#BDC3C7"/>
-                            </StackPanel>
+                <!-- Part Info -->
+                <Border Grid.Column="2" Background="#2C3E50" CornerRadius="8" 
+                Padding="15,10" Margin="0,0,15,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="🔧" FontSize="22" 
+                           VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <StackPanel>
+                            <TextBlock Text="PART" FontSize="14" 
+                               Foreground="#BDC3C7" FontWeight="Medium"/>
+                            <TextBlock x:Name="txtPartNumber" Text="PN-123456" 
+                               FontSize="18" FontWeight="Bold" 
+                               Foreground="White"/>
                         </StackPanel>
-                    </Border>
-                </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Date Display -->
+                <Border Grid.Column="3" Background="#34495E" CornerRadius="20" 
+                Padding="15,10" Margin="0,0,15,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="📅" FontSize="20" Foreground="White" 
+                           VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <StackPanel>
+                            <TextBlock Text="DATE" FontSize="14" 
+                               Foreground="#BDC3C7" FontWeight="Medium"/>
+                            <TextBlock x:Name="txtDateDisplay" Text="31 Januari 2025" 
+                               FontSize="18" FontWeight="SemiBold" 
+                               Foreground="White"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Time Display -->
+                <Border Grid.Column="4" Background="#34495E" CornerRadius="20" 
+                Padding="15,10" Margin="0,0,15,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="🕐" FontSize="20" Foreground="White" 
+                           VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <StackPanel>
+                            <TextBlock Text="TIME" FontSize="14" 
+                               Foreground="#BDC3C7" FontWeight="Medium"/>
+                            <TextBlock x:Name="txtTimeDisplay" Text="00:00:00" 
+                               FontSize="18" FontWeight="SemiBold" 
+                               Foreground="White"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Spacer -->
+                <Grid Grid.Column="5"/>
+
+                <!-- User Profile -->
+                <Border Grid.Column="6" Background="#34495E" CornerRadius="20" Padding="12">
+                    <StackPanel Orientation="Horizontal">
+                        <!-- Profile Photo -->
+                        <Border Width="50" Height="50" CornerRadius="25" 
+                        Background="#3498DB" Margin="0,0,12,0">
+                            <TextBlock Text="👤" FontSize="26" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"/>
+                        </Border>
+
+                        <!-- User Details -->
+                        <StackPanel>
+                            <TextBlock x:Name="txtUserName" Text="Supervisor Name" 
+                               FontSize="16" FontWeight="SemiBold" 
+                               Foreground="White"/>
+                            <TextBlock x:Name="txtUserNoreg" Text="Noreg: 000000" 
+                               FontSize="14" Foreground="#BDC3C7"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
             </Grid>
         </Border>
 
         <!-- Main Content -->
-        <Grid Grid.Row="1" Margin="20">
+        <Grid Grid.Row="1" Margin="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="340"/>
             </Grid.ColumnDefinitions>
 
             <!-- Left Panel - Production Data -->
-            <Grid Grid.Column="0" Margin="0,0,20,0">
+            <Grid Grid.Column="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <!-- Shift and Machine Info -->
-                <Border Grid.Row="0" Background="White" CornerRadius="10" 
-                        Padding="20" Margin="0,0,0,15">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <!-- Shift Selection -->
-                        <StackPanel Grid.Column="0">
-                            <TextBlock Text="SHIFT" FontSize="12" 
-               Foreground="#7F8C8D" FontWeight="SemiBold"/>
-                            <Border Background="#3498DB" CornerRadius="5" 
-            Padding="10" Margin="0,5,0,0">
-                                <TextBlock x:Name="txtShiftInfo" Text="Shift 1 (07:30 - 16:30)" 
-                   FontSize="14" FontWeight="Bold" 
-                   Foreground="White" HorizontalAlignment="Center"/>
-                            </Border>
-                        </StackPanel>
-
-                        <!-- Machine Info -->
-                        <StackPanel Grid.Column="2" Margin="0,0,0,0">
-                            <TextBlock Text="MACHINE NUMBER" FontSize="12" 
-                                       Foreground="#7F8C8D" FontWeight="SemiBold"/>
-                            <TextBlock x:Name="txtMachineNumber" Text="MCH-001" 
-                                       FontSize="20" FontWeight="Bold" 
-                                       Foreground="#2C3E50" Margin="0,5,0,0"/>
-                        </StackPanel>
-
-                        <!-- Part Info -->
-                        <StackPanel Grid.Column="3" Margin="20,0,0,0">
-                            <TextBlock Text="PART NUMBER" FontSize="12" 
-                                       Foreground="#7F8C8D" FontWeight="SemiBold"/>
-                            <TextBlock x:Name="txtPartNumber" Text="PN-123456" 
-                                       FontSize="20" FontWeight="Bold" 
-                                       Foreground="#2C3E50" Margin="0,5,0,0"/>
-                        </StackPanel>
-
-
-                    </Grid>
-                </Border>
-
                 <!-- Production Metrics -->
-                <Grid Grid.Row="1">
-                    <!-- Perbesar tabel dengan mengatur kolom -->
+                <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="2*"/>
-                        <!-- Tabel lebih besar -->
                         <ColumnDefinition Width="*"/>
-                        <!-- Shift Performance lebih kecil -->
                     </Grid.ColumnDefinitions>
 
                     <!-- Left - Hourly Breakdown Table -->
-                    <Border Grid.Column="0" Background="White" CornerRadius="10" 
-        Padding="30" Margin="0,0,10,0">
-                        <StackPanel>
-                            <TextBlock Text="HOURLY BREAKDOWN" FontSize="18" 
-                   FontWeight="Bold" Foreground="#2C3E50"
-                   Margin="0,0,0,20"/>
+                    <Border Grid.Column="0"
+        Background="#2C3E50"
+        CornerRadius="10"
+        Padding="20"
+        Margin="0,0,10,0">
 
-                            <!-- Tabel Header -->
-                            <Border Background="#F8F9FA" CornerRadius="5" 
-                Height="50" Margin="0,0,0,10">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Header -->
+                            <Border Grid.Row="0"
+                Background="#34495E"
+                CornerRadius="8"
+                Height="55"
+                Margin="0,0,0,3">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
@@ -304,357 +317,406 @@
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock Text="JAM" Grid.Column="0" 
+                                    <TextBlock Text="JAM"
+                           Grid.Column="0"
                            Style="{StaticResource TableHeaderStyle}"/>
-                                    <TextBlock Text="TARGET" Grid.Column="1" 
+                                    <TextBlock Text="TARGET"
+                           Grid.Column="1"
                            Style="{StaticResource TableHeaderStyle}"/>
-                                    <TextBlock Text="AKTUAL" Grid.Column="2" 
+                                    <TextBlock Text="AKTUAL"
+                           Grid.Column="2"
                            Style="{StaticResource TableHeaderStyle}"/>
                                 </Grid>
                             </Border>
 
-                            <!-- Tabel Tanpa Scroll - Lebih Besar -->
-                            <Grid>
+                            <!-- Table Body -->
+                            <Grid Grid.Row="1">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="50"/>
-                                    <RowDefinition Height="50"/>
-                                    <RowDefinition Height="50"/>
-                                    <RowDefinition Height="50"/>
-                                    <RowDefinition Height="50"/>
-                                    <RowDefinition Height="50"/>
-                                    <RowDefinition Height="50"/>
-                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
                                 </Grid.RowDefinitions>
 
-                                <!-- Baris 1 -->
-                                <Border Style="{StaticResource TableRowStyle}" Grid.Row="0">
+                                <!-- BARIS 1 -->
+                                <Border x:Name="borderSlot1" Grid.Row="0" Style="{StaticResource TableRowStyle}">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock x:Name="txtTimeSlot1" Text="07:30 - 08:30" 
-                               Style="{StaticResource TableCellStyle}" Grid.Column="0"/>
-                                        <TextBlock x:Name="txtTargetSlot1" Text="13" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#3498DB" Grid.Column="1"/>
-                                        <TextBlock x:Name="txtActualSlot1" Text="0" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#2ECC71" Grid.Column="2"/>
+                                        <TextBlock x:Name="txtTimeSlot1" Grid.Column="0"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="White"/>
+                                        <TextBlock x:Name="txtTargetSlot1" Grid.Column="1"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#2323FF"/>
+                                        <TextBlock x:Name="txtActualSlot1" Grid.Column="2"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#FF5C00"/>
                                     </Grid>
                                 </Border>
 
-                                <!-- Baris 2 -->
-                                <Border Style="{StaticResource TableRowStyle}" Grid.Row="1">
+                                <!-- BARIS 2 -->
+                                <Border x:Name="borderSlot2" Grid.Row="1" Style="{StaticResource TableRowStyle}">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock x:Name="txtTimeSlot2" Text="08:30 - 09:30" 
-                               Style="{StaticResource TableCellStyle}" Grid.Column="0"/>
-                                        <TextBlock x:Name="txtTargetSlot2" Text="13" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#3498DB" Grid.Column="1"/>
-                                        <TextBlock x:Name="txtActualSlot2" Text="0" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#2ECC71" Grid.Column="2"/>
+                                        <TextBlock x:Name="txtTimeSlot2" Grid.Column="0"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="White"/>
+                                        <TextBlock x:Name="txtTargetSlot2" Grid.Column="1"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#2323FF"/>
+                                        <TextBlock x:Name="txtActualSlot2" Grid.Column="2"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#FF5C00"/>
                                     </Grid>
                                 </Border>
 
-                                <!-- Baris 3 -->
-                                <Border Style="{StaticResource TableRowStyle}" Grid.Row="2">
+                                <!-- BARIS 3 -->
+                                <Border x:Name="borderSlot3" Grid.Row="2" Style="{StaticResource TableRowStyle}">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock x:Name="txtTimeSlot3" Text="09:30 - 10:45" 
-                               Style="{StaticResource TableCellStyle}" Grid.Column="0"/>
-                                        <TextBlock x:Name="txtTargetSlot3" Text="14" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#3498DB" Grid.Column="1"/>
-                                        <TextBlock x:Name="txtActualSlot3" Text="0" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#2ECC71" Grid.Column="2"/>
+                                        <TextBlock x:Name="txtTimeSlot3" Grid.Column="0"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="White"/>
+                                        <TextBlock x:Name="txtTargetSlot3" Grid.Column="1"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#2323FF"/>
+                                        <TextBlock x:Name="txtActualSlot3" Grid.Column="2"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#FF5C00"/>
                                     </Grid>
                                 </Border>
 
-                                <!-- Baris 4 -->
-                                <Border Style="{StaticResource TableRowStyle}" Grid.Row="3">
+                                <!-- BARIS 4 -->
+                                <Border x:Name="borderSlot4" Grid.Row="3" Style="{StaticResource TableRowStyle}">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock x:Name="txtTimeSlot4" Text="10:45 - 11:45" 
-                               Style="{StaticResource TableCellStyle}" Grid.Column="0"/>
-                                        <TextBlock x:Name="txtTargetSlot4" Text="12" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#3498DB" Grid.Column="1"/>
-                                        <TextBlock x:Name="txtActualSlot4" Text="0" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#2ECC71" Grid.Column="2"/>
+                                        <TextBlock x:Name="txtTimeSlot4" Grid.Column="0"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="White"/>
+                                        <TextBlock x:Name="txtTargetSlot4" Grid.Column="1"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#2323FF"/>
+                                        <TextBlock x:Name="txtActualSlot4" Grid.Column="2"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#FF5C00"/>
                                     </Grid>
                                 </Border>
 
-                                <!-- Baris 5 -->
-                                <Border Style="{StaticResource TableRowStyle}" Grid.Row="4">
+                                <!-- BARIS 5 -->
+                                <Border x:Name="borderSlot5" Grid.Row="4" Style="{StaticResource TableRowStyle}">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock x:Name="txtTimeSlot5" Text="11:45 - 13:30" 
-                               Style="{StaticResource TableCellStyle}" Grid.Column="0"/>
-                                        <TextBlock x:Name="txtTargetSlot5" Text="12" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#3498DB" Grid.Column="1"/>
-                                        <TextBlock x:Name="txtActualSlot5" Text="0" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#2ECC71" Grid.Column="2"/>
+                                        <TextBlock x:Name="txtTimeSlot5" Grid.Column="0"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="White"/>
+                                        <TextBlock x:Name="txtTargetSlot5" Grid.Column="1"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#2323FF"/>
+                                        <TextBlock x:Name="txtActualSlot5" Grid.Column="2"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#FF5C00"/>
                                     </Grid>
                                 </Border>
 
-                                <!-- Baris 6 -->
-                                <Border Style="{StaticResource TableRowStyle}" Grid.Row="5">
+                                <!-- BARIS 6 -->
+                                <Border x:Name="borderSlot6" Grid.Row="5" Style="{StaticResource TableRowStyle}">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock x:Name="txtTimeSlot6" Text="13:30 - 14:30" 
-                               Style="{StaticResource TableCellStyle}" Grid.Column="0"/>
-                                        <TextBlock x:Name="txtTargetSlot6" Text="12" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#3498DB" Grid.Column="1"/>
-                                        <TextBlock x:Name="txtActualSlot6" Text="0" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#2ECC71" Grid.Column="2"/>
+                                        <TextBlock x:Name="txtTimeSlot6" Grid.Column="0"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="White"/>
+                                        <TextBlock x:Name="txtTargetSlot6" Grid.Column="1"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#2323FF"/>
+                                        <TextBlock x:Name="txtActualSlot6" Grid.Column="2"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#FF5C00"/>
                                     </Grid>
                                 </Border>
 
-                                <!-- Baris 7 -->
-                                <Border Style="{StaticResource TableRowStyle}" Grid.Row="6">
+                                <!-- BARIS 7 -->
+                                <Border x:Name="borderSlot7" Grid.Row="6" Style="{StaticResource TableRowStyle}">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock x:Name="txtTimeSlot7" Text="14:30 - 15:30" 
-                               Style="{StaticResource TableCellStyle}" Grid.Column="0"/>
-                                        <TextBlock x:Name="txtTargetSlot7" Text="12" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#3498DB" Grid.Column="1"/>
-                                        <TextBlock x:Name="txtActualSlot7" Text="0" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#2ECC71" Grid.Column="2"/>
+                                        <TextBlock x:Name="txtTimeSlot7" Grid.Column="0"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="White"/>
+                                        <TextBlock x:Name="txtTargetSlot7" Grid.Column="1"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#2323FF"/>
+                                        <TextBlock x:Name="txtActualSlot7" Grid.Column="2"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#FF5C00"/>
                                     </Grid>
                                 </Border>
 
-                                <!-- Baris 8 -->
-                                <Border Style="{StaticResource TableRowStyle}" Grid.Row="7">
+                                <!-- BARIS 8 -->
+                                <Border x:Name="borderSlot8" Grid.Row="7" Style="{StaticResource TableRowStyle}">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <TextBlock x:Name="txtTimeSlot8" Text="15:30 - 16:30" 
-                               Style="{StaticResource TableCellStyle}" Grid.Column="0"/>
-                                        <TextBlock x:Name="txtTargetSlot8" Text="12" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#3498DB" Grid.Column="1"/>
-                                        <TextBlock x:Name="txtActualSlot8" Text="0" 
-                               Style="{StaticResource TableCellStyle}" 
-                               Foreground="#2ECC71" Grid.Column="2"/>
+                                        <TextBlock x:Name="txtTimeSlot8" Grid.Column="0"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="White"/>
+                                        <TextBlock x:Name="txtTargetSlot8" Grid.Column="1"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#2323FF"/>
+                                        <TextBlock x:Name="txtActualSlot8" Grid.Column="2"
+                       Style="{StaticResource TableCellStyle}"
+                       Foreground="#FF5C00"/>
                                     </Grid>
                                 </Border>
                             </Grid>
-
-                        </StackPanel>
+                        </Grid>
                     </Border>
 
-                    <!-- Right - Shift Performance (Sederhana) -->
-                    <Border Grid.Column="1" Background="White" CornerRadius="10" 
-                            Padding="15" Margin="10,0,0,0">
-                        <StackPanel>
-                            <TextBlock Text="SHIFT PERFORMANCE" FontSize="16" 
-                                       FontWeight="Bold" Foreground="#2C3E50"
-                                       Margin="0,0,0,15"
-                                       HorizontalAlignment="Center"/>
-
+                    <!-- Right - Shift Performance -->
+                    <Border Grid.Column="1" Background="#2C3E50" CornerRadius="10" 
+        Margin="0,0,0,0">
+                        <UniformGrid Rows="3" Margin="10">
                             <!-- Target per Shift -->
-                            <Border Margin="0,0,0,20" Padding="20" 
-                                    Background="#F8F9FA" CornerRadius="8">
-                                <StackPanel>
-                                    <TextBlock Text="TARGET SHIFT" FontSize="12" 
-                                               Foreground="#7F8C8D" 
-                                               HorizontalAlignment="Center"/>
+                            <Border Margin="8" Padding="20" 
+                Background="#34495E" CornerRadius="8"
+                BorderThickness="2" BorderBrush="#3D566E">
+                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="TARGET SHIFT" FontSize="16" 
+                           Foreground="#BDC3C7" FontWeight="Medium"
+                           HorizontalAlignment="Center"/>
                                     <TextBlock x:Name="txtTargetShift" Text="100" 
-                                               FontSize="32" FontWeight="Bold" 
-                                               Foreground="#3498DB"
-                                               HorizontalAlignment="Center"/>
-                                    <TextBlock Text="units" FontSize="14" 
-                                               Foreground="#7F8C8D" 
-                                               HorizontalAlignment="Center"
-                                               Margin="0,5,0,0"/>
+                           FontSize="40" FontWeight="Bold" 
+                           Foreground="#3498DB"
+                           HorizontalAlignment="Center"
+                           Margin="0,12,0,0"/>
                                 </StackPanel>
                             </Border>
 
                             <!-- Target per Second -->
-                            <Border Margin="0,0,0,20" Padding="20" 
-                                    Background="#F8F9FA" CornerRadius="8">
-                                <StackPanel>
-                                    <TextBlock Text="TARGET PER SECOND" FontSize="12" 
-                                               Foreground="#7F8C8D" 
-                                               HorizontalAlignment="Center"/>
-                                    <TextBlock x:Name="txtTargetSecond" Text="0.003" 
-                                               FontSize="32" FontWeight="Bold" 
-                                               Foreground="#9B59B6"
-                                               HorizontalAlignment="Center"/>
-                                    <TextBlock Text="units/sec" FontSize="14" 
-                                               Foreground="#7F8C8D" 
-                                               HorizontalAlignment="Center"
-                                               Margin="0,5,0,0"/>
+                            <Border Margin="8" Padding="20" 
+                Background="#34495E" CornerRadius="8"
+                BorderThickness="2" BorderBrush="#3D566E">
+                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="TARGET PER SECOND" FontSize="16" 
+                           Foreground="#BDC3C7" FontWeight="Medium"
+                           HorizontalAlignment="Center"/>
+                                    <TextBlock x:Name="txtTargetSecond" Text="0" 
+                           FontSize="40" FontWeight="Bold" 
+                           Foreground="#9B59B6"
+                           HorizontalAlignment="Center"
+                           Margin="0,12,0,0"/>
                                 </StackPanel>
                             </Border>
 
                             <!-- Aktual Output -->
-                            <Border Margin="0,0,0,0" Padding="20" 
-                                    Background="#F8F9FA" CornerRadius="8">
-                                <StackPanel>
-                                    <TextBlock Text="AKTUAL OUTPUT" FontSize="12" 
-                                               Foreground="#7F8C8D" 
-                                               HorizontalAlignment="Center"/>
-                                    <TextBlock x:Name="txtEfficiency" Text="0" 
-                                               FontSize="32" FontWeight="Bold" 
-                                               Foreground="#2ECC71"
-                                               HorizontalAlignment="Center"/>
-                                    <TextBlock Text="units" FontSize="14" 
-                                               Foreground="#7F8C8D" 
-                                               HorizontalAlignment="Center"
-                                               Margin="0,5,0,0"/>
+                            <Border Margin="8" Padding="20" 
+                Background="#34495E" CornerRadius="8"
+                BorderThickness="2" BorderBrush="#3D566E">
+                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="AKTUAL OUTPUT" FontSize="16" 
+                           Foreground="#BDC3C7" FontWeight="Medium"
+                           HorizontalAlignment="Center"/>
+                                    <TextBlock x:Name="txtAktual" Text="" 
+                           FontSize="40" FontWeight="Bold" 
+                           Foreground="#2ECC71"
+                           HorizontalAlignment="Center"
+                           Margin="0,12,0,0"/>
                                 </StackPanel>
                             </Border>
-                        </StackPanel>
+                        </UniformGrid>
                     </Border>
                 </Grid>
             </Grid>
 
             <!-- Right Panel - Actions -->
-            <Grid Grid.Column="1">
+            <Grid Grid.Column="1" Margin="5,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <!-- Scan Section -->
-                <Border Grid.Row="0" Background="White" CornerRadius="10" 
-                        Padding="20" Margin="0,0,0,15">
+                <Border Grid.Row="0" Background="#2C3E50" CornerRadius="10" Padding="15" Margin="0,0,0,5">
                     <StackPanel>
-                        <TextBlock Text="SCAN PART" FontSize="16" FontWeight="Bold" 
-                                   Foreground="#2C3E50" Margin="0,0,0,15"/>
-
                         <!-- Barcode Input -->
-                        <TextBox x:Name="txtBarcode" Height="55" FontSize="16" 
-         Style="{StaticResource RoundedTextBoxStyle}"
-         Margin="0,0,0,10"
-         TextChanged="txtBarcode_TextChanged"
-         PreviewKeyDown="txtBarcode_PreviewKeyDown"
-         AcceptsReturn="False"
-         AcceptsTab="False"
-         VerticalContentAlignment="Center"
-         HorizontalContentAlignment="Left"
-         Padding="15">
-                            <TextBox.InputBindings>
-                                <KeyBinding Key="Enter" Command="{Binding ScanCommand}"/>
-                            </TextBox.InputBindings>
-                        </TextBox>
+                        <TextBox x:Name="txtBarcode" Height="80" FontSize="26" 
+                     Style="{StaticResource RoundedTextBoxStyle}"
+                     Margin="0,0,0,10"
+                     TextChanged="txtBarcode_TextChanged"
+                     PreviewKeyDown="txtBarcode_PreviewKeyDown"
+                     AcceptsReturn="False"
+                     AcceptsTab="False"
+                     VerticalContentAlignment="Center"
+                     HorizontalContentAlignment="Left"
+                     Padding="20" 
+                     TextWrapping="NoWrap"/>
 
-                        <Button x:Name="btnScan" Height="45" Background="#3498DB" 
-                                Foreground="White" FontSize="14" FontWeight="Bold"
-                                BorderThickness="0"
-                                Style="{StaticResource RoundedButtonStyle}"
-                                Content="📷 SCAN BARCODE"
-                                Click="btnScan_Click"/>
+                        <ListBox x:Name="scanHistoryList" 
+         Background="#1E2A38"
+         ItemsSource="{Binding}"
+         Height="190"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+         BorderBrush="#3A4A5A"
+         BorderThickness="1">
+
+                            <!-- Border untuk corner radius -->
+                            <ListBox.Template>
+                                <ControlTemplate TargetType="ListBox">
+                                    <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="8">
+                                        <ScrollViewer Padding="10" Focusable="False">
+                                            <ItemsPresenter/>
+                                        </ScrollViewer>
+                                    </Border>
+                                </ControlTemplate>
+                            </ListBox.Template>
+
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Background="Transparent" 
+                    CornerRadius="5" 
+                    Padding="10,6"
+                    Margin="0,2"
+                    Cursor="Hand">
+                                        <Grid>
+                                            <!-- Icon Circle -->
+                                            <Border Background="{Binding StatusBackground}"
+                            CornerRadius="50" 
+                            Width="22" 
+                            Height="22"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left"
+                            Margin="0,0,12,0">
+                                                <TextBlock Text="{Binding StatusIcon}" 
+                                   FontSize="11"
+                                   Foreground="White"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontWeight="Bold"/>
+                                            </Border>
+
+                                            <!-- Barcode Text -->
+                                            <TextBlock Text="{Binding DisplayText}" 
+                               FontSize="13"
+                               FontWeight="Medium"
+                               Foreground="#F8F8F8"
+                               VerticalAlignment="Center"
+                               Margin="34,0,0,0"/>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+                                    <Setter Property="Padding" Value="0"/>
+                                    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                                    <!-- Hover effect di ListBoxItem -->
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#3A4A5A"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                        </ListBox>
                     </StackPanel>
                 </Border>
 
                 <!-- Actions -->
-                <Border Grid.Row="1" Background="White" CornerRadius="10" Padding="20">
+                <Border Grid.Row="1" Background="#2C3E50" CornerRadius="10" Padding="15,15,15,15"
+ Margin="0,10,0,0">
                     <StackPanel>
-                        <TextBlock Text="ACTIONS" FontSize="16" FontWeight="Bold" 
-                                   Foreground="#2C3E50" Margin="0,0,0,15"/>
-
                         <!-- Edit Part -->
                         <Button x:Name="btnEditPart" 
-                                Style="{StaticResource ActionButtonStyle}"
-                                Click="btnEditPart_Click">
+                    Style="{StaticResource ActionButtonStyle}"
+                    Click="btnEditPart_Click"
+                    Margin="0,0,0,8" Height="45">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="✏️" FontSize="16"/>
-                                <TextBlock Text="Edit Part Number" FontSize="14" 
-                                           Foreground="#2C3E50" 
-                                           VerticalAlignment="Center"
-                                           Margin="10,0,0,0"/>
+                                <TextBlock Text="✏️" FontSize="20"/>
+                                <TextBlock Text="Edit Part Number" FontSize="18" 
+                               Foreground="White" 
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
                             </StackPanel>
                         </Button>
 
                         <!-- Download Report -->
                         <Button x:Name="btnDownloadReport" 
-                                Style="{StaticResource ActionButtonStyle}"
-                                Click="btnDownloadReport_Click">
+                    Style="{StaticResource ActionButtonStyle}"
+                    Click="btnDownloadReport_Click"
+                    Margin="0,0,0,8" Height="45">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="📊" FontSize="16"/>
-                                <TextBlock Text="Download Report PDF" FontSize="14" 
-                                           Foreground="#2C3E50" 
-                                           VerticalAlignment="Center"
-                                           Margin="10,0,0,0"/>
+                                <TextBlock Text="📊" FontSize="20"/>
+                                <TextBlock Text="Download Report PDF" FontSize="18" 
+                               Foreground="White" 
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
                             </StackPanel>
                         </Button>
 
-                        <!-- Fullscreen -->
-                        <Button x:Name="btnFullscreen" 
-                                Style="{StaticResource ActionButtonStyle}"
-                                Click="btnFullscreen_Click">
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="⛶" FontSize="16"/>
-                                <TextBlock Text="Toggle Fullscreen" FontSize="14" 
-                                           Foreground="#2C3E50" 
-                                           VerticalAlignment="Center"
-                                           Margin="10,0,0,0"/>
-                            </StackPanel>
-                        </Button>
+                        <!-- Update Target -->
                         <Button x:Name="btnUpdateTarget" 
-        Style="{StaticResource ActionButtonStyle}"
-        Click="btnUpdateTarget_Click">
+                    Style="{StaticResource ActionButtonStyle}"
+                    Click="btnUpdateTarget_Click"
+                    Height="45">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="🎯" FontSize="16"/>
-                                <TextBlock Text="Update Target" FontSize="14" 
-                   Foreground="#2C3E50" 
-                   VerticalAlignment="Center"
-                   Margin="10,0,0,0"/>
+                                <TextBlock Text="🎯" FontSize="20"/>
+                                <TextBlock Text="Update Target" FontSize="18" 
+                               Foreground="White" 
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
                             </StackPanel>
                         </Button>
                     </StackPanel>
                 </Border>
 
                 <!-- Logout Button -->
-                <Button x:Name="btnLogout" Grid.Row="2" Height="55" Margin="0,15,0,0"
-                        Background="#E74C3C" Foreground="White" FontSize="14" 
-                        FontWeight="Bold" BorderThickness="0" 
-                        Style="{StaticResource RoundedButtonStyle}"
-                        Click="btnLogout_Click">
+                <Button x:Name="btnLogout" Margin="0,15,0,0" Grid.Row="2" Height="50" 
+            Background="#E74C3C" Foreground="White" FontSize="16" 
+            FontWeight="Bold" BorderThickness="0" 
+            Style="{StaticResource RoundedButtonStyle}"
+            Click="btnLogout_Click">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <TextBlock Text="🚪" FontSize="16" Margin="0,0,10,0"/>
+                        <TextBlock Text="🚪" FontSize="20" Margin="0,0,8,0"/>
                         <TextBlock Text="LOGOUT" VerticalAlignment="Center"/>
                     </StackPanel>
                 </Button>
